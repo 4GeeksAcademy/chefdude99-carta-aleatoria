@@ -7,5 +7,13 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
-  console.log("Hello Rigo from the console!");
+  generarCarta();
 };
+
+function generarCarta() {
+  let palo = ["♦", "♥", "♠", "♣"];
+  let paloRandom = palo[Math.floor(Math.random() * palo.length)];
+  let numero = [2, 3, 4, 5, 6, 7, 8, 9, "A", "J", "Q", "K"];
+  let numeroRandom = numero[Math.floor(Math.random() * numero.length)];
+  console.log(paloRandom, numeroRandom);
+}
